@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "./components/Button";
+import { Divider } from "./components/Divider";
 
 function Landing() {
   return (
@@ -32,6 +33,7 @@ function Landing() {
             </div>
           </div>
         </section>
+        <Divider />
         {/* <section className="section"></section>
         <section className="section"></section>
         <section className="section"></section> */}

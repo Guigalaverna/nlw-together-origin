@@ -3,11 +3,11 @@
   <img src='./.github/screenshot.jpg' />
   <h3 align="center">Beauty Salon - NLW#Together - Origin</h3>
   <p align="center">
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="#">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/Guigalaverna/nlw-together-origin/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/Guigalaverna/nlw-together-origin/issues">Request Feature</a>
   </p>
 </p>
 

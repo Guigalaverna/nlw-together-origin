@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+function Landing() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <h1>beautysalon.</h1>
       </header>
+
+      <main>
+        <section>
+          <img
+            src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+            alt="Mulher tratando do cabelo de outra mulher"
+          />
+          <h1>Saúde natural para os seus cabelos</h1>
+          <p>
+            Um salão exclusivo em São Paulo, especializado em tratamentos
+            naturais.
+          </p>
+          <a href="/#">Agendar um horário</a>
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+      </main>
+
+      <footer></footer>
     </div>
   );
 }
 
-export default App;
+export default Landing;

@@ -28,6 +28,12 @@ a {
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
+
+  --divider-background: linear-gradient(
+    270deg,
+    hsla(var(--hue), 36%, 57%, 1) 0%,
+    hsla(var(--hue), 65%, 88%, 0.34) 100%
+  );
 }
 
 /* ==== Base ================================== */
@@ -75,6 +81,7 @@ h1 {
 
   header {
     border-bottom: 1px solid #e4e4e4;
+    display: flex;
 
     nav {
       height: 4.5rem;
@@ -87,6 +94,8 @@ h1 {
 
   /* ==== Home ============= */
   #home {
+    overflow: hidden;
+
     .container {
       margin: 0;
     }

@@ -1,0 +1,76 @@
+/* ==== Reset ================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ==== Variables ============================== */
+
+:root {
+  --hue: 159;
+  /* HSL colors */
+  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 41% 10%);
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: hsl(0 0% 98%);
+  --body-color: hsl(0 0% 98%);
+}
+
+/* ==== Base ================================== */
+
+body {
+  font: 400 1rem "DM Sans", sans-serif;
+  background: var(--body-color);
+  color: var(--text-color);
+
+  -webkit-font-smoothing: auto;
+}
+
+h1 {
+  font: 700 1.875rem "Poppins", sans-serif;
+  color: var(--title-color);
+}
+
+/* ==== Layout ================================== */
+
+#page-main {
+  .container {
+    width: 90%;
+
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .logo {
+    font: 700 1.31rem "Poppins", sans-serif;
+    color: var(--title-color);
+
+    span {
+      color: var(--base-color);
+    }
+  }
+
+  header {
+    border-bottom: 1px solid #e4e4e4;
+
+    nav {
+      height: 4.5rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+#button-container {
+  display: inline-flex;
+  align-items: center;
+
+  background: var(--base-color);
+  color: var(--text-color-light);
+
+  height: 3.5rem;
+  padding: 0 2rem;
+  border-radius: 0.25rem;
+
+  font: 500 1rem "DM Sans", sans-serif;
+  transition: background 0.2s;
+
+  &:hover {
+    background: var(--base-color-alt);
+  }
+}

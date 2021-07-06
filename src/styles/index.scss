@@ -1,3 +1,5 @@
+@import "../utils/sass/vendor";
+
 /* ==== Reset ================================== */
 * {
   margin: 0;
@@ -35,7 +37,7 @@ body {
   background: var(--body-color);
   color: var(--text-color);
 
-  -webkit-font-smoothing: auto;
+  @include vendor(font-smoothing, auto, webkit moz);
 }
 
 h1 {
@@ -46,13 +48,6 @@ h1 {
 /* ==== Layout ================================== */
 
 #page-main {
-  .container {
-    width: 90%;
-
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
   .logo {
     font: 700 1.31rem "Poppins", sans-serif;
     color: var(--title-color);
@@ -60,6 +55,22 @@ h1 {
     span {
       color: var(--base-color);
     }
+  }
+
+  .container {
+    width: 90%;
+
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+    &.grid {
+      display: grid;
+      gap: 2rem;
+    }
+  }
+
+  .section {
+    padding: 5rem 0;
   }
 
   header {
@@ -71,6 +82,53 @@ h1 {
       display: flex;
       align-items: center;
       justify-content: space-between;
+    }
+  }
+
+  /* ==== Home ============= */
+  #home {
+    .container {
+      margin: 0;
+    }
+
+    .image {
+      position: relative;
+
+      img {
+        position: relative;
+        right: 2.93rem;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+
+        top: -16.8%;
+        left: 16.8%;
+
+        width: 100%;
+        height: 100%;
+
+        background: var(--base-color-second);
+      }
+
+      img,
+      &::before {
+        border-radius: 0.25rem;
+      }
+    }
+
+    .text {
+      margin: 0 1.5rem;
+      text-align: center;
+
+      h1 {
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin-bottom: 2rem;
+      }
     }
   }
 }

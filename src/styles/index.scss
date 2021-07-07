@@ -1,6 +1,7 @@
 @import "../utils/sass/vendor";
 @import "./home.scss";
 @import "./about.scss";
+@import "./services.scss";
 
 /* ==== Reset ================================== */
 * {
@@ -46,6 +47,10 @@ a {
 
 /* ==== Base ================================== */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font: 400 1rem "DM Sans", sans-serif;
   background: var(--body-color);
@@ -86,11 +91,11 @@ h1 {
 
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
 
-    &.grid {
-      display: grid;
-      gap: 2rem;
-    }
+  .grid {
+    display: grid;
+    gap: 2rem;
   }
 
   .section {

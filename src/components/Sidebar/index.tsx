@@ -20,19 +20,29 @@ export function Sidebar() {
       />
       <ul className="grid">
         <li>
-          <a href="#home">Ínicio</a>
+          <a onClick={handleToggleSidebarVisibility} href="#home">
+            Ínicio
+          </a>
         </li>
         <li>
-          <a href="#about">Sobre</a>
+          <a onClick={handleToggleSidebarVisibility} href="#about">
+            Sobre
+          </a>
         </li>
         <li>
-          <a href="#services">Serviços</a>
+          <a onClick={handleToggleSidebarVisibility} href="#services">
+            Serviços
+          </a>
         </li>
         <li>
-          <a href="#testimonials">Depoimentos</a>
+          <a onClick={handleToggleSidebarVisibility} href="#testimonials">
+            Depoimentos
+          </a>
         </li>
         <li>
-          <a href="#contact">Contato</a>
+          <a onClick={handleToggleSidebarVisibility} href="#contact">
+            Contato
+          </a>
         </li>
       </ul>
       <div></div>

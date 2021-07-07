@@ -1,4 +1,6 @@
 import React from "react";
+import { ReactSVG } from "react-svg";
+import { Menu } from "../../assets/_index";
 import "./styles.scss";
 
 export function Header() {
@@ -8,7 +10,13 @@ export function Header() {
         <a className="logo" href="/#">
           beauty<span>salon</span>.
         </a>
-        <div className="menu">...</div>
+        <ReactSVG
+          src={Menu}
+          alt="Abrir menu lateral"
+          beforeInjection={(svg) => {
+            svg.classList.add("icon");
+          }}
+        />
       </nav>
     </header>
   );

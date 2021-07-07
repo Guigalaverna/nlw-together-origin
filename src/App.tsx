@@ -2,12 +2,14 @@ import React from "react";
 import { Button } from "./components/Button";
 import { Divider } from "./components/Divider";
 import { Header } from "./components/Header";
+import { Sidebar } from "./components/Sidebar";
 
 function Landing() {
   return (
     <div id="page-main">
       <main>
         <Header />
+        <Sidebar />
         <section id="home" className="section">
           <div className="container grid">
             <div className="image">

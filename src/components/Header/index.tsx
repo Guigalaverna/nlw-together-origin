@@ -1,9 +1,12 @@
 import React from "react";
 import { ReactSVG } from "react-svg";
 import { Menu } from "../../assets/_index";
+import { useSidebar } from "../../contexts/SidebarContext";
 import "./styles.scss";
 
 export function Header() {
+  const { handleToggleSidebarVisibility } = useSidebar();
+
   return (
     <header className="header-container">
       <nav className="container">
@@ -16,6 +19,7 @@ export function Header() {
           beforeInjection={(svg) => {
             svg.classList.add("icon");
           }}
+          onClick={handleToggleSidebarVisibility}
         />
       </nav>
     </header>

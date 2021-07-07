@@ -1,20 +1,13 @@
 import React from "react";
 import { Button } from "./components/Button";
 import { Divider } from "./components/Divider";
+import { Header } from "./components/Header";
 
 function Landing() {
   return (
     <div id="page-main">
-      <header>
-        <nav className="container">
-          <a className="logo" href="/#">
-            beauty<span>salon</span>.
-          </a>
-          <div className="menu">...</div>
-        </nav>
-      </header>
-
       <main>
+        <Header />
         <section id="home" className="section">
           <div className="container grid">
             <div className="image">

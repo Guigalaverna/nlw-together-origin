@@ -1,5 +1,7 @@
 import React from "react";
+import { Cosmetic, Trim, WomanHair } from "./assets/_index";
 import { Button } from "./components/Button";
+import { Card } from "./components/Card";
 import { Divider } from "./components/Divider";
 import { Header } from "./components/Header";
 import { Sidebar } from "./components/Sidebar";
@@ -64,36 +66,39 @@ function Landing() {
         </section>
       </main>
       <Divider isReverted />
-      <section className="section" id="about">
+      <section className="section" id="services">
         <div className="container grid">
-          <div className="image">
-            <img
-              src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-              alt="Três mulheres sorrindo"
-            />
-          </div>
-          <div className="text">
-            <h2 className="title">Sobre nós</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem, fugiat nihil corrupti nobis atque blanditiis, id
-              libero commodi sequi inventore eius quia consequatur provident
-              rerum omnis aut ipsa perspiciatis consectetur.
-            </p>
-            <br />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Perspiciatis laborum deserunt maxime! Velit dignissimos maiores
-              cupiditate maxime, veniam quisquam minus aperiam a nam et
-              reiciendis libero, aliquam iure voluptas fuga.
-            </p>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed
-              voluptatem, placeat rerum dolorum commodi odio laboriosam quos,
-              alias nulla assumenda iusto in velit excepturi, nemo quasi
-              quibusdam consectetur quo.
-            </p>
+          <header>
+            <h2 className="title">Serviços</h2>
+          </header>
+          <div className="cards grid">
+            <Card
+              title="Terapia capilar"
+              icon={{ source: WomanHair, alt: "Mulher de cabelos presos" }}
+            >
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatum, velit maxime? Accusantium praesentium ullam culpa
+              autem nemo delectus, reprehenderit est corrupti, voluptates
+              tempore facilis blanditiis. Unde iste sed nemo enim.
+            </Card>
+            <Card
+              title="Cortes"
+              icon={{ source: Trim, alt: "Mulher de cabelos presos" }}
+            >
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatum, velit maxime? Accusantium praesentium ullam culpa
+              autem nemo delectus, reprehenderit est corrupti, voluptates
+              tempore facilis blanditiis. Unde iste sed nemo enim.
+            </Card>
+            <Card
+              title="Tratamentos"
+              icon={{ source: Cosmetic, alt: "Mulher de cabelos presos" }}
+            >
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatum, velit maxime? Accusantium praesentium ullam culpa
+              autem nemo delectus, reprehenderit est corrupti, voluptates
+              tempore facilis blanditiis. Unde iste sed nemo enim.
+            </Card>
           </div>
         </div>
       </section>

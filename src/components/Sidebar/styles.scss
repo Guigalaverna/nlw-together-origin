@@ -1,0 +1,76 @@
+.sidebar-container {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+  width: 100vw;
+  height: 100vh;
+  display: none;
+
+  &.show {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+
+    background: var(--body-color);
+
+    > div {
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      margin-top: 1.5rem;
+      margin-right: 3rem;
+    }
+
+    ul {
+      list-style: none;
+
+      &.grid {
+        display: grid;
+        gap: 2rem;
+      }
+    }
+
+    ul li {
+      font: 700 1.875rem "Poppins", sans-serif;
+      text-align: center;
+    }
+
+    ul li a {
+      position: relative;
+
+      color: var(--title-color);
+      transition: color 0.2s;
+    }
+
+    ul li a:hover {
+      color: var(--base-color);
+    }
+
+    ul li a::after {
+      content: "";
+
+      width: 0;
+      height: 2px;
+
+      background: var(--base-color);
+      position: absolute;
+
+      left: 0;
+      bottom: -0.5rem;
+
+      transition: width 0.2s;
+    }
+
+    ul li a:hover::after {
+      width: 100%;
+    }
+  }
+}

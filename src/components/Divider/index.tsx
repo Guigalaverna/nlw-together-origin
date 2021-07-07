@@ -1,6 +1,11 @@
+import cx from "classnames";
 import React from "react";
 import "./styles.scss";
 
-export function Divider() {
-  return <div id="divider"></div>;
+interface DividerProps {
+  isReverted?: boolean;
+}
+
+export function Divider({ isReverted = false }: DividerProps) {
+  return <div id="divider" className={cx({ reverted: isReverted })}></div>;
 }

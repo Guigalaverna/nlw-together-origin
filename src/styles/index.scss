@@ -100,10 +100,12 @@ h1 {
 
   .section {
     padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
   }
 
   .title {
-    font: 700 1.31rem "Poppins", sans-serif;
+    font: 700 2rem "Poppins", sans-serif;
     color: var(--title-color);
   }
 }

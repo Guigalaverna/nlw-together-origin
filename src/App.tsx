@@ -107,23 +107,48 @@ function Landing() {
       <section className="section" id="testimonials">
         <div className="container grid">
           <header>
-            <h2 className='title'>Depoimentos de <br /> quem já passou <br /> por aqui</h2>
+            <h2 className="title">
+              Depoimentos de <br /> quem já passou <br /> por aqui
+            </h2>
           </header>
         </div>
         <div className="testimonials-wrapper">
-          <TestimonalCard name='Wanessa Souza' avatar='https://randomuser.me/api/portraits/women/3.jpg'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in inventore, sequi nihil ipsum optio maiores, sapiente earum laborum aliquid repudiandae atque?
+          <TestimonalCard
+            name="Wanessa Souza"
+            avatar="https://randomuser.me/api/portraits/women/3.jpg"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in
+            inventore, sequi nihil ipsum optio maiores, sapiente earum laborum
+            aliquid repudiandae atque?
           </TestimonalCard>
-          <TestimonalCard name='Wanessa Souza' avatar='https://randomuser.me/api/portraits/women/3.jpg'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in inventore, sequi nihil ipsum optio maiores, sapiente earum laborum aliquid repudiandae atque?
+          <TestimonalCard
+            name="Wanessa Souza"
+            avatar="https://randomuser.me/api/portraits/women/3.jpg"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in
+            inventore, sequi nihil ipsum optio maiores, sapiente earum laborum
+            aliquid repudiandae atque?
           </TestimonalCard>
-          <TestimonalCard name='Wanessa Souza' avatar='https://randomuser.me/api/portraits/women/3.jpg'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in inventore, sequi nihil ipsum optio maiores, sapiente earum laborum aliquid repudiandae atque?
+          <TestimonalCard
+            name="Wanessa Souza"
+            avatar="https://randomuser.me/api/portraits/women/3.jpg"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in
+            inventore, sequi nihil ipsum optio maiores, sapiente earum laborum
+            aliquid repudiandae atque?
           </TestimonalCard>
-          <TestimonalCard name='Wanessa Souza' avatar='https://randomuser.me/api/portraits/women/3.jpg'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in inventore, sequi nihil ipsum optio maiores, sapiente earum laborum aliquid repudiandae atque?
+          <TestimonalCard
+            name="Wanessa Souza"
+            avatar="https://randomuser.me/api/portraits/women/3.jpg"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in
+            inventore, sequi nihil ipsum optio maiores, sapiente earum laborum
+            aliquid repudiandae atque?
           </TestimonalCard>
-          
         </div>
       </section>
       <footer></footer>

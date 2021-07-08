@@ -14,7 +14,7 @@ export function Sidebar() {
         src={Close}
         alt="Fechar barra lateral"
         beforeInjection={(svg) => {
-          svg.classList.add("icon");
+          svg.classList.add("icon-fill");
         }}
         onClick={handleToggleSidebarVisibility}
       />

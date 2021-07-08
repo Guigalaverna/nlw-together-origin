@@ -115,10 +115,12 @@ function Landing() {
           </header>
         </div>
         <Swiper
-          spaceBetween={20}
-          slidesPerView={3}
+          spaceBetween={5}
+          slidesPerView={1}
           onSwiper={(swiper) => console.log(swiper)}
-          className="testimonials-wrapper"
+          className="testimonials-wrapper container"
+          mousewheel
+          keyboard
         >
           <SwiperSlide>
             <TestimonalCard
@@ -128,7 +130,7 @@ function Landing() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in
               inventore, sequi nihil ipsum optio maiores, sapiente earum laborum
-              aliquid repudiandae atque?
+              aliquid repudiandae atque? maça
             </TestimonalCard>
           </SwiperSlide>
           <SwiperSlide>
@@ -139,7 +141,7 @@ function Landing() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in
               inventore, sequi nihil ipsum optio maiores, sapiente earum laborum
-              aliquid repudiandae atque?
+              aliquid repudiandae atque? banana
             </TestimonalCard>
           </SwiperSlide>
           <SwiperSlide>
@@ -150,7 +152,7 @@ function Landing() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in
               inventore, sequi nihil ipsum optio maiores, sapiente earum laborum
-              aliquid repudiandae atque?
+              aliquid repudiandae atque? abacaxi
             </TestimonalCard>
           </SwiperSlide>
           <SwiperSlide>
@@ -161,7 +163,7 @@ function Landing() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in
               inventore, sequi nihil ipsum optio maiores, sapiente earum laborum
-              aliquid repudiandae atque?
+              aliquid repudiandae atque? pera
             </TestimonalCard>
           </SwiperSlide>
         </Swiper>

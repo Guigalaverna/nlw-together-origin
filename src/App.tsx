@@ -114,6 +114,16 @@ function Landing() {
           <TestimonalCard name='Wanessa Souza' avatar='https://randomuser.me/api/portraits/women/3.jpg'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in inventore, sequi nihil ipsum optio maiores, sapiente earum laborum aliquid repudiandae atque?
           </TestimonalCard>
+          <TestimonalCard name='Wanessa Souza' avatar='https://randomuser.me/api/portraits/women/3.jpg'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in inventore, sequi nihil ipsum optio maiores, sapiente earum laborum aliquid repudiandae atque?
+          </TestimonalCard>
+          <TestimonalCard name='Wanessa Souza' avatar='https://randomuser.me/api/portraits/women/3.jpg'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in inventore, sequi nihil ipsum optio maiores, sapiente earum laborum aliquid repudiandae atque?
+          </TestimonalCard>
+          <TestimonalCard name='Wanessa Souza' avatar='https://randomuser.me/api/portraits/women/3.jpg'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in inventore, sequi nihil ipsum optio maiores, sapiente earum laborum aliquid repudiandae atque?
+          </TestimonalCard>
+          
         </div>
       </section>
       <footer></footer>

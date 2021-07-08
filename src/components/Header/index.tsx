@@ -31,7 +31,7 @@ export function Header() {
           src={Menu}
           alt="Abrir menu lateral"
           beforeInjection={(svg) => {
-            svg.classList.add("icon");
+            svg.classList.add("icon-fill");
           }}
           onClick={handleToggleSidebarVisibility}
         />

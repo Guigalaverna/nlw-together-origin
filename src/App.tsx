@@ -1,4 +1,6 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper.scss";
 import { Cosmetic, Trim, WomanHair } from "./assets/_index";
 import { Button } from "./components/Button";
 import { Card } from "./components/Card";
@@ -112,44 +114,57 @@ function Landing() {
             </h2>
           </header>
         </div>
-        <div className="testimonials-wrapper">
-          <TestimonalCard
-            name="Wanessa Souza"
-            avatar="https://randomuser.me/api/portraits/women/3.jpg"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in
-            inventore, sequi nihil ipsum optio maiores, sapiente earum laborum
-            aliquid repudiandae atque?
-          </TestimonalCard>
-          <TestimonalCard
-            name="Wanessa Souza"
-            avatar="https://randomuser.me/api/portraits/women/3.jpg"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in
-            inventore, sequi nihil ipsum optio maiores, sapiente earum laborum
-            aliquid repudiandae atque?
-          </TestimonalCard>
-          <TestimonalCard
-            name="Wanessa Souza"
-            avatar="https://randomuser.me/api/portraits/women/3.jpg"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in
-            inventore, sequi nihil ipsum optio maiores, sapiente earum laborum
-            aliquid repudiandae atque?
-          </TestimonalCard>
-          <TestimonalCard
-            name="Wanessa Souza"
-            avatar="https://randomuser.me/api/portraits/women/3.jpg"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in
-            inventore, sequi nihil ipsum optio maiores, sapiente earum laborum
-            aliquid repudiandae atque?
-          </TestimonalCard>
-        </div>
+        <Swiper
+          spaceBetween={20}
+          slidesPerView={3}
+          onSwiper={(swiper) => console.log(swiper)}
+          className="testimonials-wrapper"
+        >
+          <SwiperSlide>
+            <TestimonalCard
+              name="Wanessa Souza"
+              avatar="https://randomuser.me/api/portraits/women/3.jpg"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in
+              inventore, sequi nihil ipsum optio maiores, sapiente earum laborum
+              aliquid repudiandae atque?
+            </TestimonalCard>
+          </SwiperSlide>
+          <SwiperSlide>
+            <TestimonalCard
+              name="Wanessa Souza"
+              avatar="https://randomuser.me/api/portraits/women/3.jpg"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in
+              inventore, sequi nihil ipsum optio maiores, sapiente earum laborum
+              aliquid repudiandae atque?
+            </TestimonalCard>
+          </SwiperSlide>
+          <SwiperSlide>
+            <TestimonalCard
+              name="Wanessa Souza"
+              avatar="https://randomuser.me/api/portraits/women/3.jpg"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in
+              inventore, sequi nihil ipsum optio maiores, sapiente earum laborum
+              aliquid repudiandae atque?
+            </TestimonalCard>
+          </SwiperSlide>
+          <SwiperSlide>
+            <TestimonalCard
+              name="Wanessa Souza"
+              avatar="https://randomuser.me/api/portraits/women/3.jpg"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in
+              inventore, sequi nihil ipsum optio maiores, sapiente earum laborum
+              aliquid repudiandae atque?
+            </TestimonalCard>
+          </SwiperSlide>
+        </Swiper>
       </section>
       <footer></footer>
     </div>

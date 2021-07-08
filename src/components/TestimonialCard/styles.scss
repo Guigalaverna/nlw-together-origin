@@ -3,7 +3,7 @@
   padding: 2rem;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
   margin-top: 2rem;
-  
+  transition: transform 0.2s;
   p {
     position: relative;
     text-indent: 1.875rem;
@@ -31,5 +31,10 @@
       width: 2rem;
       height: 2rem;
     }
+  }
+
+  &:hover {
+    transform: translateY(-7px);
+    border: 0.2rem solid var(--base-color);
   }
 }

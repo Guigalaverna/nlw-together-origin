@@ -1,13 +1,11 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper.scss";
 import { Cosmetic, Trim, WomanHair } from "./assets/_index";
 import { Button } from "./components/Button";
 import { Card } from "./components/Card";
+import { Carousel } from "./components/Carousel";
 import { Divider } from "./components/Divider";
 import { Header } from "./components/Header";
 import { Sidebar } from "./components/Sidebar";
-import { TestimonalCard } from "./components/TestimonialCard";
 
 function Landing() {
   return (
@@ -113,60 +111,8 @@ function Landing() {
               Depoimentos de <br /> quem já passou <br /> por aqui
             </h2>
           </header>
+          <Carousel />
         </div>
-        <Swiper
-          spaceBetween={5}
-          slidesPerView={1}
-          onSwiper={(swiper) => console.log(swiper)}
-          className="testimonials-wrapper container"
-          mousewheel
-          keyboard
-        >
-          <SwiperSlide>
-            <TestimonalCard
-              name="Wanessa Souza"
-              avatar="https://randomuser.me/api/portraits/women/3.jpg"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in
-              inventore, sequi nihil ipsum optio maiores, sapiente earum laborum
-              aliquid repudiandae atque? maça
-            </TestimonalCard>
-          </SwiperSlide>
-          <SwiperSlide>
-            <TestimonalCard
-              name="Wanessa Souza"
-              avatar="https://randomuser.me/api/portraits/women/3.jpg"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in
-              inventore, sequi nihil ipsum optio maiores, sapiente earum laborum
-              aliquid repudiandae atque? banana
-            </TestimonalCard>
-          </SwiperSlide>
-          <SwiperSlide>
-            <TestimonalCard
-              name="Wanessa Souza"
-              avatar="https://randomuser.me/api/portraits/women/3.jpg"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in
-              inventore, sequi nihil ipsum optio maiores, sapiente earum laborum
-              aliquid repudiandae atque? abacaxi
-            </TestimonalCard>
-          </SwiperSlide>
-          <SwiperSlide>
-            <TestimonalCard
-              name="Wanessa Souza"
-              avatar="https://randomuser.me/api/portraits/women/3.jpg"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              quidem magni tenetur! Eum incidunt nostrum, veritatis eveniet in
-              inventore, sequi nihil ipsum optio maiores, sapiente earum laborum
-              aliquid repudiandae atque? pera
-            </TestimonalCard>
-          </SwiperSlide>
-        </Swiper>
       </section>
       <footer></footer>
     </div>
